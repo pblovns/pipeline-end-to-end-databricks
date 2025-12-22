@@ -9,7 +9,7 @@ O projeto simula um cenário real de ingestão e processamento de dados de clien
 Nesta etapa, o foco foi garantir que os dados "aterrizassem" no ambiente de nuvem de forma íntegra e organizada.
 
 **Destaques Técnicos:**
-- **Geração de Dados Sintéticos**: Uso da biblioteca `Faker` (localidade `pt_BR`) para criar 10.000 registros realistas (Nome, CPF, Endereço, etc).
+- **Geração de Dados Sintéticos**: Uso da biblioteca `Faker` (localidade `pt_BR`) para criar um lote entre 10.000 a 100.000 registros realistas (Nome, CPF, Endereço, etc).
 - **Processamento Distribuído**: Implementação via **PySpark** para conversão de listas Python em DataFrames escaláveis.
 - **Governança de Tempo**: Ajuste preciso de timezone (`America/Sao_Paulo`) usando `zoneinfo` para garantir rastreabilidade real dos logs.
 - **Data Cleaning Preventivo**: Tratamento de quebras de linha em endereços para evitar corrupção estrutural no formato CSV.
