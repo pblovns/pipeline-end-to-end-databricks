@@ -1,4 +1,4 @@
-# 🚀 Pipeline de Dados End-to-End no Databricks
+# 🚀 Pipeline de Dados End-to-End com Databricks
 
 Este repositório contém o desenvolvimento de um pipeline de dados completo utilizando a **Arquitetura Medalhão**, processado integralmente no **Databricks** e governado pelo **Unity Catalog**.
 
