@@ -1,0 +1,18 @@
+repos:
+  # Hooks básicos e muito úteis para qualquer projeto
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace      # Remove espaços sobrando no fim das linhas
+      - id: end-of-file-fixer        # Garante que os arquivos terminem com uma linha vazia
+      - id: check-yaml               # Verifica se a sintaxe dos arquivos YAML está correta
+      - id: check-added-large-files  # Impede o commit acidental de arquivos muito pesados
+
+  # Hook do Pylint
+  - repo: https://github.com/pylint-dev/pylint
+    rev: v3.2.6
+    hooks:
+      - id: pylint
+        # Se você usar pacotes de terceiros, o pylint pode precisar deles instalados
+        # para não dar erro de "import-error". Exemplo de como adicionar dependências extras:
+        # additional_dependencies: [requests, pandas]
