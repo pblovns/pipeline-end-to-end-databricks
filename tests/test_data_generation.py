@@ -17,7 +17,6 @@ class TestFakerConfiguration:
         """Test that Faker generates valid CPF format"""
         fake = Faker('pt_BR')
         cpf = fake.cpf()
-        
         # CPF should have 14 characters (11 digits + 2 dots + 1 dash)
         assert len(cpf) == 14
         assert cpf[3] == '.'
@@ -28,7 +27,6 @@ class TestFakerConfiguration:
         """Test that Faker generates valid phone number"""
         fake = Faker('pt_BR')
         phone = fake.phone_number()
-        
         # Phone should not be empty
         assert phone is not None
         assert len(phone) > 0
@@ -37,7 +35,6 @@ class TestFakerConfiguration:
         """Test that Faker generates valid email"""
         fake = Faker('pt_BR')
         email = fake.email()
-        
         # Email should contain @
         assert '@' in email
         assert '.' in email
