@@ -1,4 +1,4 @@
-name: Pylint
+name: Dev-Test-Pylint
 
 on: [push]
 
