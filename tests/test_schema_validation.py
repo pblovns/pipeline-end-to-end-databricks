@@ -26,7 +26,7 @@ class TestSchemaValidation:
         
         # Create sample data matching schema
         data = [
-            ("João Silva", "123.456.789-00", "(11) 99988-7766", "1990-01-15", 
+            ("João Silva", "123.456.789-00", "(11) 99988-7766", "1990-01-15",
              "joao@email.com", "Rua A, 123 | SP", "Engenheiro", "Tech Corp", "https://techcorp.com")
         ]
         
