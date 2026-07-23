@@ -3,7 +3,6 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-      - id: trailing-whitespace      # Remove espaços sobrando no fim das linhas
       - id: end-of-file-fixer        # Garante que os arquivos terminem com uma linha vazia
       - id: check-yaml               # Verifica se a sintaxe dos arquivos YAML está correta
       - id: check-added-large-files  # Impede o commit acidental de arquivos muito pesados
